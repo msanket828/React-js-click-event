@@ -76,8 +76,8 @@
 
 @media (max-width: 767px) {
   .squareBox {   
-    min-width: 25%;
-    min-height: 20vh;
+    min-width: 27%;
+    min-height: 15vh;
    
   }
 }
