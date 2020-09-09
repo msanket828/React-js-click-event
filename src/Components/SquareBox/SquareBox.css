@@ -1,0 +1,83 @@
+.squareBox {  
+  position: relative;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  min-width: 20%;
+  min-height: 20vh;
+  margin: 10px;
+  cursor: pointer;    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .4s ease;
+  z-index: 33;
+}
+
+.squareBox:hover .overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;  
+}
+
+.squareBox:hover.squareBox > span {
+  color: #fff;
+  z-index: 22;
+}
+
+.overlay {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 0%;
+  height: 0%;
+  background: rgba(0,0, 0,0.8);  
+}
+
+.squareBox > span {
+  font-weight: bold;
+  color: #000;
+  text-transform: capitalize;  
+  transition: all .1s ease;
+}
+
+
+.yellow {
+  background: yellow;
+}
+
+.blue {
+  background: blue;
+}
+
+.green {
+  background: green;
+}
+
+.pink {
+  background: pink;
+}
+
+.spray {
+  background: rgb(130, 204, 221)
+}
+
+.pgreen {
+  background: rgb(184, 233, 148);
+}
+
+.sred {
+  background:rgb(245, 59, 87)
+}
+
+.megaman {
+  background: rgb(75, 207, 250)
+}
+
+
+@media (max-width: 767px) {
+  .squareBox {   
+    min-width: 25%;
+    min-height: 20vh;
+   
+  }
+}
